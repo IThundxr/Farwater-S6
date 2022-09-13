@@ -196,11 +196,6 @@ onEvent('recipes', event => {
 
 	event.remove({ output: 'ender_slime_sling' })
 
-	event.remove({ output: 'computercraft:turtle_normal' })
-	event.remove({ output: 'computercraft:turtle_advanced' })
-
-	event.remove({ mod: 'refinedpipes' })
-
 	event.remove({ input: 'thermal:earth_charge' })
 	event.remove({ input: 'thermal:press_coin_die' })
 	event.remove({ input: 'thermal:press_gear_die' })
