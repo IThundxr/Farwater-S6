@@ -21,8 +21,17 @@ onEvent('jei.add.items', event => {
 onEvent('jei.hide.items', event => {
 	event.hide('createaddition:copper_connector')
 	
-	event.hide('computercraft:turtle_normal')
-	event.hide('computercraft:turtle_advanced')
+	//event.hide('computercraft:turtle_normal')
+	//event.hide('computercraft:turtle_advanced')
 
 	event.hide('farwateraddons:ithundxr_item')
+	
+	event.hide('thermal:carrot_block')
+    	event.hide('thermal:potato_block')
+    	event.hide('thermal:beetroot_block')
+    	event.hide('thermal:corn_block')
+    	event.hide('thermal:onion_block')
+    	event.hide('thermal:eggplant_block')
+    	event.hide('thermal:tomato_block')
+
 })
