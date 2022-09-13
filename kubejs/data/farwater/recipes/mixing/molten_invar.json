@@ -3,17 +3,17 @@
   "ingredients": [
     {
       "fluid": "tconstruct:molten_iron",
-      "amount": 20
+      "amount": 180
     },
     {
       "fluid": "tconstruct:molten_nickel",
-      "amount": 10
+      "amount": 90
     }
   ],
   "results": [
     {
       "fluid": "tconstruct:molten_invar",
-      "amount": 10
+      "amount": 270
     }
   ],
   "heatRequirement": "heated"

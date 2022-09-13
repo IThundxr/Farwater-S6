@@ -3,11 +3,11 @@
   "ingredients": [
     {
       "fluid": "tconstruct:molten_debris",
-      "amount": 10
+      "amount": 40
     },
     {
       "fluid": "tconstruct:molten_gold",
-      "amount": 10
+      "amount": 20
     }
   ],
   "results": [

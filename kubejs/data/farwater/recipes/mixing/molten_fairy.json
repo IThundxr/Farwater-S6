@@ -2,7 +2,7 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "item": "minecraft:gold_nugget",
+      "item": "minecraft:gold_ingot",
       "amount": 1
     },
     {

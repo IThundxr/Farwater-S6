@@ -3,7 +3,7 @@
   "ingredients": [
     {
       "fluid": "tconstruct:molten_iron",
-      "amount": 20
+      "amount": 180
     },
     {
       "item": "kubejs:coal_dust",
@@ -13,7 +13,7 @@
   "results": [
     {
       "fluid": "tconstruct:molten_steel",
-      "amount": 10
+      "amount": 90
     }
   ],
   "heatRequirement": "heated"
