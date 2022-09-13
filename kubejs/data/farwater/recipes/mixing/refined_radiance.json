@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:glowstone",
+	  "count": 8
+    },
+    {
+      "item": "create:polished_rose_quartz",
+	  "count": 2
+    },
+    {
+      "fluid": "tconstruct:molten_glass",
+	  "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "create:refined_radiance"
+    }
+  ],
+  "heatRequirement": "superheated"
+}

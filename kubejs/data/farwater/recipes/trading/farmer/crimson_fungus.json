@@ -1,0 +1,19 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+		"item": "minecraft:crimson_fungus",
+		"count": 64
+    },
+    {
+		"item": "kubejs:farmer_card"
+    }
+  ],
+  "result": [
+    {
+		"item": "thermal:bronze_coin",
+		"count": 4
+    }
+  ],
+  "energy": 2400
+}

@@ -1,0 +1,19 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+		"item": "minecraft:brown_mushroom",
+		"count": 64
+    },
+    {
+		"item": "kubejs:farmer_card"
+    }
+  ],
+  "result": [
+    {
+		"item": "thermal:bronze_coin",
+		"count": 3
+    }
+  ],
+  "energy": 2400
+}

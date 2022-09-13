@@ -1,0 +1,17 @@
+{
+	"type": "create:deploying",
+	"ingredients": [
+		{
+			"item": "minecraft:porkchop"
+		},
+		{
+			"tag": "forge:tools/knives"
+		}
+	],
+	"results": [
+		{
+			"item": "farmersdelight:bacon",
+			"count": 2
+		}
+	]
+}

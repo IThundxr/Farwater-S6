@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"///",
+		"###",
+		"///"
+	],
+	"key": {
+		"#": {
+			"item": "farmersdelight:canvas"
+		},
+		"/": {
+			"item": "minecraft:bamboo"
+		}
+	},
+	"result": {
+		"item": "waterstrainer:strainer_fisherman"
+	}
+}

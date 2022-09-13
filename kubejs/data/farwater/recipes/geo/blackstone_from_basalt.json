@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:basalt"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:blackstone",
+      "count": 1
+    }
+  ],
+  "processingTime": 100
+}

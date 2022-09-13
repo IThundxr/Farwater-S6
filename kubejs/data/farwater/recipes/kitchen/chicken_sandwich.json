@@ -1,0 +1,79 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:bread"
+  },
+  "transitionalItem": {
+    "item": "minecraft:bread",
+	"nbt": "{CustomModelData:4,display:{Name:'{\"text\":\"Incomplete Chicken Sandwich\",\"italic\":\"false\"}'}}"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:bread",
+		  "nbt": "{CustomModelData:4,display:{Name:'{\"text\":\"Incomplete Chicken Sandwich\",\"italic\":\"false\"}'}}"
+        },
+        {
+          "tag": "forge:cooked_chicken"
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:bread",
+		  "nbt": "{CustomModelData:4,display:{Name:'{\"text\":\"Incomplete Chicken Sandwich\",\"italic\":\"false\"}'}}"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:bread",
+		  "nbt": "{CustomModelData:4,display:{Name:'{\"text\":\"Incomplete Chicken Sandwich\",\"italic\":\"false\"}'}}"
+        },
+        {
+          "tag": "forge:salad_ingredients"
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:bread",
+		  "nbt": "{CustomModelData:4,display:{Name:'{\"text\":\"Incomplete Chicken Sandwich\",\"italic\":\"false\"}'}}"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:bread",
+		  "nbt": "{CustomModelData:4,display:{Name:'{\"text\":\"Incomplete Chicken Sandwich\",\"italic\":\"false\"}'}}"
+        },
+        {
+          "tag": "forge:vegetables/carrot"
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:bread",
+		  "nbt": "{CustomModelData:4,display:{Name:'{\"text\":\"Incomplete Chicken Sandwich\",\"italic\":\"false\"}'}}"
+        }
+      ]
+    }
+  ],
+  "results": [
+	{
+	  "item":"farmersdelight:chicken_sandwich",
+	  "count": 2,
+      "chance": 1.0
+	},
+	{
+	  "item":"farmersdelight:chicken_sandwich",
+	  "count": 1,
+      "chance": 1.0
+	}
+  ],
+  "loops": 1
+}

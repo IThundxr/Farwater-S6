@@ -1,0 +1,17 @@
+{
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "kubejs:cyan_radiance"
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:blue_radiance"
+    },
+    {
+      "fluid": "kubejs:green_solution",
+      "amount": 50
+    }
+  ]
+}

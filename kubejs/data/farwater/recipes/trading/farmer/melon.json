@@ -1,0 +1,19 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+		"item": "minecraft:melon",
+		"count": 64
+    },
+    {
+		"item": "kubejs:farmer_card"
+    }
+  ],
+  "result": [
+    {
+		"item": "thermal:bronze_coin",
+		"count": 9
+    }
+  ],
+  "energy": 2400
+}

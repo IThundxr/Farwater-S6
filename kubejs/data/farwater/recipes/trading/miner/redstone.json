@@ -1,0 +1,19 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+		"tag": "forge:dusts/redstone",
+		"count": 64
+    },
+    {
+		"item": "kubejs:miner_card"
+    }
+  ],
+  "result": [
+    {
+		"item": "thermal:bronze_coin",
+		"count": 2
+    }
+  ],
+  "energy": 2400
+}

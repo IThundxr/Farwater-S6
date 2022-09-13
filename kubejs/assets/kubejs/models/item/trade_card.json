@@ -1,0 +1,13 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "kubejs:item/trading_cards/trade_card"
+	},
+    "overrides": [
+        { "predicate": {"custom_model_data": 1}, "model": "kubejs:item/trading_cards/hunter"},
+        { "predicate": {"custom_model_data": 2}, "model": "kubejs:item/trading_cards/lumber"},
+        { "predicate": {"custom_model_data": 3}, "model": "kubejs:item/trading_cards/farmer"},
+        { "predicate": {"custom_model_data": 4}, "model": "kubejs:item/trading_cards/miner"},
+        { "predicate": {"custom_model_data": 5}, "model": "kubejs:item/trading_cards/fisherman"}
+    ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "kubejs:blue_solution",
+	  "amount": 250
+    },
+    {
+      "item": "create:asurine",
+	  "count": 1
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:asurine_alloy"
+    }
+  ],
+  "heatRequirement": "heated"
+}

@@ -1,0 +1,23 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "R",
+    "B",
+    "N"
+  ],
+  "key": {
+    "R": {
+      "item": "kubejs:refined_radiance_block"
+    },
+    "B": {
+      "item": "refinedstorage:machine_casing" 
+    },
+    "N": {
+      "item": "kubejs:netherite_sheet"
+    }
+  },                    
+  "result": {
+    "item": "torchmaster:megatorch",
+    "count": 1
+  }
+}

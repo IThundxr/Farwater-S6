@@ -1,0 +1,19 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+		"item": "create:polished_rose_quartz",
+		"count": 64
+    },
+    {
+		"item": "kubejs:miner_card"
+    }
+  ],
+  "result": [
+    {
+		"item": "thermal:bronze_coin",
+		"count": 10
+    }
+  ],
+  "energy": 2400
+}

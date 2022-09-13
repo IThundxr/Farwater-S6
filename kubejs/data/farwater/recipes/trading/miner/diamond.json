@@ -1,0 +1,19 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+		"tag": "forge:gems/diamond",
+		"count": 16
+    },
+    {
+		"item": "kubejs:miner_card"
+    }
+  ],
+  "result": [
+    {
+		"item": "thermal:bronze_coin",
+		"count": 16
+    }
+  ],
+  "energy": 2400
+}

@@ -1,0 +1,13 @@
+{
+  "type": "farmersdelight:cooking",
+  "ingredients": [
+    {
+      "item": "thermal:tomato_sauce"
+    }
+  ],
+  "result": {
+    "item": "farmersdelight:tomato_sauce",
+    "count": 3
+  },
+  "cookingtime": 200
+}

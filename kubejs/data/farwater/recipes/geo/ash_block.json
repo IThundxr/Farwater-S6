@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:blackstone"
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:ash_block",
+      "count": 1
+    }
+  ],
+  "processingTime": 100
+}

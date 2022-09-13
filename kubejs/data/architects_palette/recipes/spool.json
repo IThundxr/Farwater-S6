@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ooo",
+    "ooo",
+    "ooo"
+  ],
+  "key": {
+    "o": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "architects_palette:spool"
+  }
+}

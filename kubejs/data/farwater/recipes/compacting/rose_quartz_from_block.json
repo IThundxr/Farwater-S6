@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "kubejs:rose_quartz_block"
+    }
+  ],
+  "result": {
+    "item": "create:polished_rose_quartz",
+    "count": 9
+  }
+}

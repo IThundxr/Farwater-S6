@@ -1,0 +1,19 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+		"item": "minecraft:rabbit_foot",
+		"count": 16
+    },
+    {
+		"item": "kubejs:hunter_card"
+    }
+  ],
+  "result": [
+    {
+		"item": "thermal:bronze_coin",
+		"count": 1
+    }
+  ],
+  "energy": 2400
+}

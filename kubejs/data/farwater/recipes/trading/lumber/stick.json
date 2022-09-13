@@ -1,0 +1,19 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+		"item": "minecraft:stick",
+		"count": 64
+    },
+    {
+		"item": "kubejs:lumber_card"
+    }
+  ],
+  "result": [
+    {
+		"item": "thermal:bronze_coin",
+		"count": 1
+    }
+  ],
+  "energy": 2400
+}

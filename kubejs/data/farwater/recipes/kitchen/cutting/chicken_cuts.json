@@ -1,0 +1,17 @@
+{
+	"type": "create:deploying",
+	"ingredients": [
+		{
+			"item": "minecraft:chicken"
+		},
+		{
+			"tag": "forge:tools/knives"
+		}
+	],
+	"results": [
+		{
+			"item": "farmersdelight:chicken_cuts",
+			"count": 2
+		}
+	]
+}

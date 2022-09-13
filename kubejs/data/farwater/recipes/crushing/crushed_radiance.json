@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "create:refined_radiance"
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:crushed_radiance",
+      "count": 1
+    }
+  ],
+  "processingTime": 3200
+}

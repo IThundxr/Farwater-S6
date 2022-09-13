@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"/#/"
+	],
+	"key": {
+		"#": {
+			"item": "waterstrainer:strainer_fisherman"
+		},
+		"/": {
+			"tag": "forge:ingots/neptunium"
+		}
+	},
+	"result": {
+		"item": "waterstrainer:strainer_fisherman_reinforced"
+	}
+}

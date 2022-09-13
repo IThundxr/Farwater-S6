@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:pufferfish",
+	
+	"aquaculture:bluegill",
+	"aquaculture:brown_trout",
+	"aquaculture:carp",
+	"aquaculture:minnow",
+	"aquaculture:perch",
+	
+	"aquaculture:bayad",
+	"aquaculture:boulti",
+	
+	"aquaculture:blackfish",
+	"aquaculture:pacific_halibut",
+	"aquaculture:atlantic_halibut",
+	"aquaculture:atlantic_herring",
+	
+	"aquaculture:piranha",
+	"aquaculture:tambaqui",
+	
+	"aquaculture:frog",
+	"aquaculture:leech"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "tconstruct:molten_iron",
+      "amount": 20
+    },
+    {
+      "item": "kubejs:coal_dust",
+      "count": 1
+    }
+  ],
+  "results": [
+    {
+      "fluid": "tconstruct:molten_steel",
+      "amount": 10
+    }
+  ],
+  "heatRequirement": "heated"
+}

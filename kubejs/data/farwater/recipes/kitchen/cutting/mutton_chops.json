@@ -1,0 +1,17 @@
+{
+	"type": "create:deploying",
+	"ingredients": [
+		{
+			"item": "minecraft:mutton"
+		},
+		{
+			"tag": "forge:tools/knives"
+		}
+	],
+	"results": [
+		{
+			"item": "farmersdelight:mutton_chops",
+			"count": 2
+		}
+	]
+}

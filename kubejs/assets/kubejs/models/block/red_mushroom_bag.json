@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "kubejs:block/red_mushroom_bag",
+    "down": "kubejs:block/bag_bottom",
+    "up": "kubejs:block/red_mushroom_bag",
+    "north": "kubejs:block/bag_side_tied",
+    "south": "kubejs:block/bag_side_tied",
+    "east": "kubejs:block/bag_side",
+    "west": "kubejs:block/bag_side"
+  }
+}

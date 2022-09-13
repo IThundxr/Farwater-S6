@@ -1,0 +1,23 @@
+{
+    "type": "create:mixing",
+    "ingredients": [
+    	{
+    		"item": "minecraft:mossy_cobblestone"
+		},
+		{
+			"item": "create:veridium"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "create:veridium",
+			"count": 1
+		},
+		{
+			"item": "create:veridium",
+			"count": 1,
+			"chance": 0.5
+		}
+	],
+	"heatRequirement": "none"
+}

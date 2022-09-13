@@ -1,0 +1,17 @@
+{
+	"type": "create:deploying",
+	"ingredients": [
+		{
+			"item": "minecraft:beef"
+		},
+		{
+			"tag": "forge:tools/knives"
+		}
+	],
+	"results": [
+		{
+			"item": "farmersdelight:minced_beef",
+			"count": 2
+		}
+	]
+}

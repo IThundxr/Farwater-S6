@@ -1,0 +1,18 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "Z",
+    "I"
+  ],
+  "key": {
+    "Z": {
+      "tag": "forge:plates/zinc"
+    },
+    "I": {
+      "tag": "forge:plates/iron"
+    }
+  },
+  "result": {
+    "item": "createaddition:capacitor"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "kubejs:bronze_coin",
+	  "count": 64
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:steel_coin"
+    }
+  ],
+  "heatRequirement": "none"
+}

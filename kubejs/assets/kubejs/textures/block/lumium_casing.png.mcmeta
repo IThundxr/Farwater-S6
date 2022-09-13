@@ -1,0 +1,9 @@
+{
+    "ctm": {
+        "ctm_version": 1,
+        "type": "ctm",
+        "textures": [
+            "kubejs:block/lumium_casing-ctm"
+        ]
+    }
+}

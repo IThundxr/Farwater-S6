@@ -1,0 +1,23 @@
+{
+    "type": "create:mixing",
+    "ingredients": [
+    	{
+    		"item": "minecraft:blackstone"
+		},
+		{
+			"item": "create:crimsite"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "create:crimsite",
+			"count": 1
+		},
+		{
+			"item": "create:crimsite",
+			"count": 1,
+			"chance": 0.5
+		}
+	],
+	"heatRequirement": "none"
+}

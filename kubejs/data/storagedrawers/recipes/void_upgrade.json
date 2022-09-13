@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "OXO",
+        "###"
+    ],
+    "key": {
+        "#": { "tag": "forge:obsidian" },
+        "O": { "tag": "forge:ender_pearls" },
+        "X": { "item": "storagedrawers:upgrade_template" }
+    },
+    "result": { "item": "storagedrawers:void_upgrade" }
+}

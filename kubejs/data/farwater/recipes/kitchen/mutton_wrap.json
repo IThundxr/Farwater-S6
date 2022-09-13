@@ -1,0 +1,98 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:bread"
+  },
+  "transitionalItem": {
+    "item": "minecraft:bread",
+	"nbt": "{CustomModelData:5,display:{Name:'{\"text\":\"Incomplete Mutton Wrap\",\"italic\":\"false\"}'}}"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:bread",
+		  "nbt": "{CustomModelData:5,display:{Name:'{\"text\":\"Incomplete Mutton Wrap\",\"italic\":\"false\"}'}}"
+        },
+        {
+          "tag": "forge:cooked_mutton"
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:bread",
+		  "nbt": "{CustomModelData:5,display:{Name:'{\"text\":\"Incomplete Mutton Wrap\",\"italic\":\"false\"}'}}"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:bread",
+		  "nbt": "{CustomModelData:5,display:{Name:'{\"text\":\"Incomplete Mutton Wrap\",\"italic\":\"false\"}'}}"
+        },
+        {
+          "tag": "forge:salad_ingredients"
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:bread",
+		  "nbt": "{CustomModelData:5,display:{Name:'{\"text\":\"Incomplete Mutton Wrap\",\"italic\":\"false\"}'}}"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:bread",
+		  "nbt": "{CustomModelData:5,display:{Name:'{\"text\":\"Incomplete Mutton Wrap\",\"italic\":\"false\"}'}}"
+        },
+        {
+          "tag": "forge:vegetables/tomato"
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:bread",
+		  "nbt": "{CustomModelData:5,display:{Name:'{\"text\":\"Incomplete Mutton Wrap\",\"italic\":\"false\"}'}}"
+        }
+      ]
+    },
+	{
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "minecraft:bread",
+		  "nbt": "{CustomModelData:5,display:{Name:'{\"text\":\"Incomplete Mutton Wrap\",\"italic\":\"false\"}'}}"
+        },
+        {
+          "fluid": "minecraft:milk",
+          "amount": 250
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:bread",
+		  "nbt": "{CustomModelData:5,display:{Name:'{\"text\":\"Incomplete Mutton Wrap\",\"italic\":\"false\"}'}}"
+        }
+      ]
+    }
+  ],
+  "results": [
+	{
+	  "item":"farmersdelight:mutton_wrap",
+	  "count": 2,
+      "chance": 1.0
+	},
+	{
+	  "item":"farmersdelight:mutton_wrap",
+	  "count": 1,
+      "chance": 1.0
+	}
+  ],
+  "loops": 1
+}

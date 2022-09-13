@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "kubejs:red_mushroom_bag"
+    }
+  ],
+  "result": {
+    "item": "minecraft:red_mushroom",
+    "count": 9
+  }
+}

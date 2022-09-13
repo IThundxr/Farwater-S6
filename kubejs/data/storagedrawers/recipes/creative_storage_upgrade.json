@@ -1,0 +1,28 @@
+  
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "DEEED",
+    "EENEE",
+    "ENSNE",
+    "EENEE",
+    "DEEED"
+  ],
+  "key": {
+    "E": {
+      "item": "storagedrawers:emerald_storage_upgrade"
+    },
+    "N": {
+      "item": "minecraft:netherite_block"
+    },
+    "D": {
+      "item": "minecraft:diamond_block"
+    },
+    "S": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "result": {
+    "item": "storagedrawers:creative_storage_upgrade"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+	"aquaculture:muskellunge",
+	"aquaculture:gar",
+	
+	"aquaculture:capitaine",
+	"aquaculture:synodontis",
+	
+	"aquaculture:pink_salmon",
+	"aquaculture:pollock",
+	
+	"aquaculture:arapaima",
+	"aquaculture:arrau_turtle",
+	
+	"aquaculture:brown_shrooma",
+	"aquaculture:red_shrooma"
+  ]
+}

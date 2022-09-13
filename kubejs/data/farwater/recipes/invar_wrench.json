@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"S S",
+		" I ",
+		" I "
+	],
+	"key": {
+		"I": {
+			"tag": "forge:rods/invar"
+		},
+		"S": {
+			"tag": "forge:plates/invar"
+		}
+	},
+	"result": {
+		"item": "factorium:wrench"
+	}
+}

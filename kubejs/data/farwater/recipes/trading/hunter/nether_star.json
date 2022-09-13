@@ -1,0 +1,19 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+		"item": "minecraft:nether_star",
+		"count": 1
+    },
+    {
+		"item": "kubejs:hunter_card"
+    }
+  ],
+  "result": [
+    {
+		"item": "kubejs:steel_coin",
+		"count": 1
+    }
+  ],
+  "energy": 2400
+}

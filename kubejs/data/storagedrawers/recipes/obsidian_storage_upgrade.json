@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        "#X#",
+        "   "
+    ],
+    "key": {
+        "#": { "item": "create:andesite_alloy" },
+        "X": { "item": "storagedrawers:upgrade_template" }
+    },
+    "result": { "item": "storagedrawers:obsidian_storage_upgrade" }
+}

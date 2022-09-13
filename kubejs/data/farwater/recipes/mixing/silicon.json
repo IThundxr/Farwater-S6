@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "tconstruct:molten_quartz",
+      "amount": 100
+    },
+    {
+      "item": "kubejs:coal_dust",
+      "count": 2
+    }
+  ],
+  "results": [
+    {
+      "item": "refinedstorage:silicon",
+      "count": 1
+    }
+  ],
+  "heatRequirement": "heated"
+}

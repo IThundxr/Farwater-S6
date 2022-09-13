@@ -1,0 +1,19 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+		"item": "minecraft:mutton",
+		"count": 64
+    },
+    {
+		"item": "kubejs:hunter_card"
+    }
+  ],
+  "result": [
+    {
+		"item": "thermal:bronze_coin",
+		"count": 2
+    }
+  ],
+  "energy": 2400
+}

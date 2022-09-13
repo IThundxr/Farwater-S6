@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        "#X#",
+        "   "
+    ],
+    "key": {
+        "#": { "item": "create:polished_rose_quartz" },
+        "X": { "item": "storagedrawers:gold_storage_upgrade" }
+    },
+    "result": { "item": "storagedrawers:diamond_storage_upgrade" }
+}

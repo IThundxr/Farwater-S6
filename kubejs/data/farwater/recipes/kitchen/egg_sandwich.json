@@ -1,0 +1,61 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:bread"
+  },
+  "transitionalItem": {
+    "item": "minecraft:bread",
+	"nbt": "{CustomModelData:3,display:{Name:'{\"text\":\"Incomplete Egg Sandwich\",\"italic\":\"false\"}'}}"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:bread",
+		  "nbt": "{CustomModelData:3,display:{Name:'{\"text\":\"Incomplete Egg Sandwich\",\"italic\":\"false\"}'}}"
+        },
+        {
+          "tag": "forge:cooked_eggs"
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:bread",
+		  "nbt": "{CustomModelData:3,display:{Name:'{\"text\":\"Incomplete Egg Sandwich\",\"italic\":\"false\"}'}}"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:bread",
+		  "nbt": "{CustomModelData:3,display:{Name:'{\"text\":\"Incomplete Egg Sandwich\",\"italic\":\"false\"}'}}"
+        },
+        {
+          "tag": "forge:cooked_eggs"
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:bread",
+		  "nbt": "{CustomModelData:3,display:{Name:'{\"text\":\"Incomplete Egg Sandwich\",\"italic\":\"false\"}'}}"
+        }
+      ]
+    }
+  ],
+  "results": [
+	{
+	  "item":"farmersdelight:egg_sandwich",
+	  "count": 2,
+      "chance": 1.0
+	},
+	{
+	  "item":"farmersdelight:egg_sandwich",
+	  "count": 1,
+      "chance": 1.0
+	}
+  ],
+  "loops": 1
+}

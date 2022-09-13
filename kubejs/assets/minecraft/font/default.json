@@ -1,0 +1,96 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/unicode_2a00.png",
+            "height": 9,
+            "ascent": 8,
+            "chars": [
+                "\u2a00"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/unicode_2a01.png",
+            "height": 9,
+            "ascent": 8,
+            "chars": [
+                "\u2a01"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/unicode_2a02.png",
+            "height": 9,
+            "ascent": 8,
+            "chars": [
+                "\u2a02"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/unicode_2a03.png",
+            "height": 9,
+            "ascent": 8,
+            "chars": [
+                "\u2a03"
+            ]
+        },
+		
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/unicode_2a08.png",
+            "height": 9,
+            "ascent": 8,
+            "chars": [
+                "\u2a08"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/unicode_2a09.png",
+            "height": 9,
+            "ascent": 8,
+            "chars": [
+                "\u2a09"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/unicode_2a0a.png",
+            "height": 9,
+            "ascent": 8,
+            "chars": [
+                "\u2a0a"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/unicode_2a0b.png",
+            "height": 9,
+            "ascent": 8,
+            "chars": [
+                "\u2a0b"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/unicode_2a0c.png",
+            "height": 9,
+            "ascent": 8,
+            "chars": [
+                "\u2a0c"
+            ]
+        },
+		
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/unicode_2699.png",
+            "height": 9,
+            "ascent": 8,
+            "chars": [
+                "\u2699"
+            ]
+        }
+    ]
+}

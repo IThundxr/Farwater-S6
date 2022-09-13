@@ -1,0 +1,19 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+		"tag": "farwater:tier1_fish",
+		"count": 64
+    },
+    {
+		"item": "kubejs:fisher_card"
+    }
+  ],
+  "result": [
+    {
+		"item": "thermal:bronze_coin",
+		"count": 6
+    }
+  ],
+  "energy": 2400
+}
