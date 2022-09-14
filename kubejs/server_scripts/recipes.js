@@ -164,35 +164,6 @@ onEvent('recipes', event => {
 		'2x croptopia:caramel'
 	], 'create_confectionery:bar_of_caramel')
 
-	
-	//remove
-	function delRec(id) {
-		event.remove({ id: id })
-	}
-
-	delRec('alloyed:mixing/bronze_ingot')
-	delRec('alloyed:mixing/bronze_ingot_x3')
-	delRec('alloyed:mixing/steel_ingot')
-	delRec('aquaculture:tin_can_to_iron_nugget')
-	delRec('aquaculture:tin_can_to_iron_nugget_from_blasting')
-	delRec('aquaculture:tin_can_to_iron_nugget_from_blasting')
-
-	delRec('architects_pallete:vertslabs/limestone_brick_vertical_slab')
-	delRec('architects_pallete:vertslabs/limestone_brick_vertical_slab_revert')
-	delRec('architects_pallete:vertslabs/limestone_vertical_slab')
-	delRec('architects_pallete:vertslabs/limestone_vertical_slab_revert')
-	delRec('architects_pallete:vertslabs/mushy_limestone_brick_vertical_slab')
-	delRec('architects_pallete:vertslabs/mushy_limestone_brick_vertical_slab_revert')
-	delRec('architects_pallete:vertslabs/stonecutting/limestone_vslab_from_limestone_stonecutting')
-	delRec('architects_pallete:vertslabs/stonecutting/mushy_limestone_brick_vslab_from_mushy_limestone_bricks_stonecutting')
-
-	delRec('torchmaster:megatorch')
-	delRec('torchmaster:dreadlamp')
-	delRec('tconstruct:smeltery/casting/metal/soulsteel/ingot_gold_cast')
-	delRec('tconstruct:smeltery/casting/metal/soulsteel/ingot_sand_cast')
-	delRec('tconstruct:smeltery/casting/metal/soulsteel/nugget_gold_cast')
-	delRec('tconstruct:smeltery/casting/metal/soulsteel/nugget_sand_cast')
-	delRec('tconstruct:smeltery/casting/metal/soulsteel/block')
 
 	event.remove({ output: 'ender_slime_sling' })
 
@@ -202,13 +173,4 @@ onEvent('recipes', event => {
 	event.remove({ input: 'thermal:press_packing_2x2_die' })
 	event.remove({ input: 'thermal:press_packing_3x3_die' })
 	event.remove({ input: 'thermal:press_unpacking_die' })
-	event.remove({ input: 'thermal:fluid_cell' })
-
-	event.remove({ output: 'thermal:carrot_block' })
-	event.remove({ output: 'thermal:potato_block' })
-	event.remove({ output: 'thermal:beetroot_block' })
-	event.remove({ output: 'thermal:corn_block' })
-	event.remove({ output: 'thermal:onion_block' })
-	event.remove({ output: 'thermal:eggplant_block' })
-	event.remove({ output: 'thermal:tomato_block' })
 })
