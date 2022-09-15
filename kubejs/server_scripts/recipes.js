@@ -173,4 +173,13 @@ onEvent('recipes', event => {
 	event.remove({ input: 'thermal:press_packing_2x2_die' })
 	event.remove({ input: 'thermal:press_packing_3x3_die' })
 	event.remove({ input: 'thermal:press_unpacking_die' })
+
+	// Remove double Food Crates
+	event.remove({ output: 'thermal:carrot_block' })
+	event.remove({ output: 'thermal:potato_block' })
+	event.remove({ output: 'thermal:beetroot_block' })
+	event.remove({ output: 'thermal:corn_block' })
+	event.remove({ output: 'thermal:onion_block' })
+	event.remove({ output: 'thermal:eggplant_block' })
+	event.remove({ output: 'thermal:tomato_block' })
 })
