@@ -167,7 +167,7 @@ onEvent('recipes', event => {
 
 	// Abuseable
 	event.remove({ output: 'tconstruct:efln_ball' })
-	event.remove({ output: 'ender_slime_sling' })
+	event.remove({ output: 'tconstruct:ender_slime_sling' })
 
 	// To make trade station work
 	event.remove({ input: 'thermal:earth_charge' })

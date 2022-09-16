@@ -19,7 +19,7 @@ onEvent('rei.hide.items', event => {
 
     // Abuseable
     event.hide('tconstruct:efln_ball')
-    event.hide('ender_slime_sling')
+    event.hide('tconstruct:ender_slime_slingender_slime_sling')
 
     // To make trade station work
     event.hide('thermal:earth_charge')
