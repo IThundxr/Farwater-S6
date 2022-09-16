@@ -167,11 +167,8 @@ onEvent('recipes', event => {
 
 	// Abuseable
 	event.remove({ output: 'tconstruct:efln_ball' })
-	// Abuseable
-	event.remove({ output: 'tconstruct:efln_ball' })
 	event.remove({ output: 'ender_slime_sling' })
 
-	// To make trade station work
 	// To make trade station work
 	event.remove({ input: 'thermal:earth_charge' })
 	event.remove({ input: 'thermal:press_coin_die' })
@@ -230,58 +227,10 @@ onEvent('recipes', event => {
 	event.remove({ output: 'davebuildingmod:particle_generator' })
    	event.remove({ output: 'davebuildingmod:particle_card_tnt' })
  	event.remove({ output: 'davebuildingmod:particle_card_fire' })
-    	event.remove({ output: 'davebuildingmod:particle_card_campfire' })
-    	event.remove({ output: 'davebuildingmod:particle_card_smoke' })
-    	event.remove({ output: 'davebuildingmod:particle_card_steam' })
-    	event.remove({ output: 'avebuildingmod:particle_card_water' })
-    	event.remove({ output: 'davebuildingmod:hard_air' })
-    	event.remove({ output: 'davebuildingmod:soft_air' })
-	
-    	// Ah yes thermals lovely very annoying grenades and tnt
-	event.remove({ output: 'thermal:slime_grenade' })
-	event.remove({ output: 'thermal:redstone_grenade' })
-	event.remove({ output: 'thermal:glowstone_grenade' })
-	event.remove({ output: 'thermal:ender_grenade' })
-	event.remove({ output: 'thermal:earth_grenade' })
-	event.remove({ output: 'thermal:lightning_grenade' })
-	event.remove({ output: 'thermal:ice_grenade' })
-	event.remove({ output: 'thermal:fire_grenade' })
-	event.remove({ output: 'thermal:explosive_grenade' })
-	
-	event.remove({ output: 'thermal:fire_tnt' })
-	event.remove({ output: 'thermal:ice_tnt' })
-	event.remove({ output: 'thermal:lightning_tnt' })
-	event.remove({ output: 'thermal:earth_tnt' })
-	event.remove({ output: 'thermal:ender_tnt' })
-	event.remove({ output: 'thermal:glowstone_tnt' })
-	event.remove({ output: 'thermal:redstone_tnt' })
-	event.remove({ output: 'thermal:slime_tnt' })
-	
-	event.remove({ output: 'thermal:slime_tnt_minecart' })
-	event.remove({ output: 'thermal:redstone_tnt_minecart' })
-	event.remove({ output: 'thermal:glowstone_tnt_minecart' })
-	event.remove({ output: 'thermal:ender_tnt_minecart' })
-	event.remove({ output: 'thermal:earth_tnt_minecart' })
-	event.remove({ output: 'thermal:lightning_tnt_minecart' })
-	event.remove({ output: 'thermal:ice_tnt_minecart' })
-	event.remove({ output: 'thermal:fire_tnt_minecart' })
-	
-    	// Explotable stuff from ae2
-	event.remove({ output: 'ae2:tiny_tnt' })
-	event.remove({ output: 'ae2:debug_eraser' })
-	event.remove({ output: 'ae2:debug_meteorite_placer' })
-	
-    	// Spams console on arc and doesnt function
-	event.remove({ output: 'create:tree_fertilizer' })
-	
-    	// Explotiable blocks from dbm
-	event.remove({ output: 'davebuildingmod:particle_generator' })
-   	event.remove({ output: 'davebuildingmod:particle_card_tnt' })
- 	event.remove({ output: 'davebuildingmod:particle_card_fire' })
 	event.remove({ output: 'davebuildingmod:particle_card_campfire' })
 	event.remove({ output: 'davebuildingmod:particle_card_smoke' })
 	event.remove({ output: 'davebuildingmod:particle_card_steam' })
-	event.remove({ output: 'avebuildingmod:particle_card_water' })
+	event.remove({ output: 'davebuildingmod:particle_card_water' })
 	event.remove({ output: 'davebuildingmod:hard_air' })
 	event.remove({ output: 'davebuildingmod:soft_air' })
 })
