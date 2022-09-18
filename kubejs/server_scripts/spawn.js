@@ -10,7 +10,7 @@ var log = []
 
 onEvent('player.tick', event => {
     const { x, y, z } = event.player
-    if (x < -2170 && x > -2120 &&
+    if (x < -2110 && x > -2180 &&
         y < 132 && y > 120 &&
         z < 1400 && z > 1320
     ) {
