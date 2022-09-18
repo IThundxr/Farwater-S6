@@ -8,7 +8,7 @@ settings.logErroringRecipes = true
 var seed
 var log = []
 
-onEvent('player.tick', event => {
+onEvent('player.tick', event => {z
     const { x, y, z } = event.player
     if (x < -2120 && x > -2170 &&
         y < 131 && y > 128 &&

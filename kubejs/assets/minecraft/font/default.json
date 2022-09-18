@@ -77,7 +77,7 @@
             "type": "bitmap",
             "file": "minecraft:font/unicode_2a0c.png",
             "height": 9,
-            "ascent": 29,
+            "ascent": 8,
             "chars": [
                 "\u2a0c"
             ]
