@@ -18,7 +18,6 @@ onEvent('rei.hide.items', event => {
     event.hide('farwateraddons:ithundxr_item')
 
     // Abuseable
-    event.hide('tconstruct:efln_ball')
     event.hide('tconstruct:ender_slime_slingender_slime_sling')
 
     // To make trade station work
