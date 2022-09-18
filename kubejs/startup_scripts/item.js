@@ -66,9 +66,6 @@ onEvent('item.registry', event => {
 	event.create('drill_head').displayName('Drill Head')
 	event.create('saw_blade').displayName('Saw Blade')
 	event.create('roller_shafts').displayName('Roller Shafts')
-	event.create('crimsite_alloy').displayName('Crimsite Alloy')
-	event.create('asurine_alloy').displayName('Asurine Alloy')
-	event.create('veridium_alloy').displayName('Veridium Alloy')
 
 	//event.create('tin_nugget', item => {
 	//	item.displayName('Tin Nugget')
