@@ -9,11 +9,12 @@ var seed
 var log = []
 
 onEvent('player.tick', event => {z
-    const { x, y, z } = event.player
-    if (x < -2120 && x > -2170 &&
-        y < 131 && y > 128 &&
-        z < 1390 && z > 1330
+    const player = event.getPlayer()
+    const { x, y, z } = player
+    if (x < -2140 && x > -2190 &&
+        y < 151 && y > 148 &&
+        z < 1410 && z > 1350
     ) {
-        event.player.potionEffects.add('slow_falling')
+        player.potionEffects.add('slow_falling')
     }
 })
