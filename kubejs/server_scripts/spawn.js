@@ -9,8 +9,7 @@ var seed
 var log = []
 
 onEvent('player.tick', event => {
-    const player = event.player
-    const { x, y, z } = player
+    const { x, y, z } = event.player
     if (x < -2130 && x > -2160 &&
         y < 132 && y > 120 &&
         z < 1400 && z > 1320
