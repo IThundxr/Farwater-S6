@@ -178,7 +178,6 @@ onEvent('recipes', event => {
 
 
 	// Abuseable
-	event.remove({ output: 'tconstruct:efln_ball' })
 	event.remove({ output: 'tconstruct:ender_slime_sling' })
 
 	// To make trade station work

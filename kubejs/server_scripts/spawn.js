@@ -8,13 +8,12 @@ settings.logErroringRecipes = true
 var seed
 var log = []
 
-onEvent('player.tick', event => {z
-    const player = event.getPlayer()
-    const { x, y, z } = player
-    if (x < -2140 && x > -2190 &&
-        y < 151 && y > 148 &&
-        z < 1410 && z > 1350
+onEvent('player.tick', event => {
+    const { x, y, z } = event.player
+    if (x < -2110 && x > -2180 &&
+        y < 132 && y > 120 &&
+        z < 1400 && z > 1320
     ) {
-        player.potionEffects.add('slow_falling')
+        event.player.potionEffects.add('slow_falling')
     }
 })
