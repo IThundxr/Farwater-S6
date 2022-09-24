@@ -119,6 +119,18 @@ onEvent('recipes', event => {
 	event.stonecutting('framedcompactdrawers:framed_full_four', 'framedcompactdrawers:framed_trim')
 	event.stonecutting('2x storagedrawers:upgrade_template', 'framedcompactdrawers:framed_trim')
 
+	// Easier Void Upgrade
+	event.remove({ id: 'storagedrawers:void_upgrade' })
+	event.shaped('storagedrawers:void_upgrade', [
+		'SSS',
+		'STS',
+		'SSS'
+	],
+		{
+			S: 'minecraft:stick',
+			T: 'storagedrawers:upgrade_template'
+		})
+
 	// XP Stuff
 	// XP Fluids to Bottle o' Enchanting with appropiate Ratios
 	event.recipes.createFilling('minecraft:experience_bottle', [
