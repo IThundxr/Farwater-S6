@@ -151,6 +151,15 @@ function recipetweaks(event) {
     cookingtime: 200,
   })
 
+  event.custom({
+      "type": "thermal:compression_fuel",
+      "ingredient": {
+        "fluid": "createaddition:seed_oil",
+        "amount": 1000
+      },
+      "energy": 10000
+    })
+
   event.recipes.createMechanicalCrafting(
     "storagedrawers:creative_storage_upgrade",
     ["DEEED", "EENEE", "ENSNE", "EENEE", "DEEED"],
