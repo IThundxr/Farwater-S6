@@ -1,9 +1,0 @@
-{
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "create:item/brass_hand"
-    },
-    "overrides": [
-        { "predicate": {"custom_model_data": 1001}, "model": "create:item/rude_hand"}
-    ]
-}

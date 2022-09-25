@@ -10,4 +10,7 @@ onEvent('tags.items', event => {
     event.add('c:lanterns', 'minecraft:lantern')
     event.add('c:lanterns', 'minecraft:soul_lantern')
     event.add('c:lanterns', 'architects_palette:nether_brass_lantern')
+
+    //adds experience to the experience tag
+    event.add('forge:experience', 'experienceobelisk:raw_experience')
   })
