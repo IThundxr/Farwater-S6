@@ -3,7 +3,7 @@
 
 onEvent('item.tooltip', tooltip => {
 	function fishTier(tier,fish,water) {
-		tooltip.add(fish, [water+' fish','§3Tier '+tier]);
+		tooltip.add(fish, [water+' fish','§3Tier '+tier])
 	}
 	
 	fishTier('I', 'aquaculture:smallmouth_bass', '§bFreshwater')

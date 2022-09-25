@@ -1,13 +1,5 @@
 priority: 1
 
-settings.logAddedRecipes = true
-settings.logRemovedRecipes = true
-settings.logSkippedRecipes = false
-settings.logErroringRecipes = true
-
-var seed
-var log = []
-
 onEvent('block.right_click', event => {
     if (event.item.hasTag('c:lanterns')) {
         let bracket = event.block.entityData?.Bracket?.Properties
@@ -22,4 +14,4 @@ onEvent('block.right_click', event => {
             if (!event.player.creativeMode) { event.player.getHeldItem(event.hand).count -= 1 }
         }
     }
-});
+})

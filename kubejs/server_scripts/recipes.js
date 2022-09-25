@@ -17,6 +17,9 @@ let donutCraft = (event, output, center, ring) => {
 onEvent("recipes", (event) => {
   log.push("Registering Recipes")
   recipetweaks(event)
+  createmelting(event)
+  woodcutting(event)
+  createaddition(event)
   crushing(event)
   drawers(event)
   xptweaks(event)
@@ -32,10 +35,352 @@ function recipetweaks(event) {
   event.replaceInput({}, "farmersdelight:wheat_dough", "#forge:doughs")
   event.replaceInput({}, "croptopia:dough", "#forge:doughs")
 
-  event.recipes.createMixing(Fluid.of("create_confectionery:caramel", 125), "croptopia:caramel").heated()
-  event.recipes.createCrushing(["2x croptopia:caramel"], "create_confectionery:bar_of_caramel")
-  
-  event.recipes.createFilling("create:electron_tube", ["create:polished_rose_quartz", Fluid.of("tconstruct:molten_iron", 10)])
+  event.recipes
+    .createMixing(
+      Fluid.of("create_confectionery:caramel", 125),
+      "croptopia:caramel"
+    )
+    .heated()
+  event.recipes.createCrushing(
+    ["2x croptopia:caramel"],
+    "create_confectionery:bar_of_caramel"
+  )
+
+  event.recipes.createFilling("create:electron_tube", [
+    "create:polished_rose_quartz",
+    Fluid.of("tconstruct:molten_iron", 10),
+  ])
+
+  event.shapeless("architects_palette:charcoal_block", [
+    "9x minecraft:charcoal",
+  ])
+  event.shapeless("9x minecraft:charcoal", [
+    "architects_palette:charcoal_block",
+  ])
+
+  event.shapeless("architects_palette:spool", ["9x minecraft:string"])
+
+  event.shapeless("create:andesite_casing", [
+    "#minecraft:logs",
+    "create:andesite_alloy",
+  ])
+  event.shapeless("create:brass_casing", [
+    "#minecraft:logs",
+    "#forge:plates/brass",
+  ])
+  event.shapeless("create:copper_casing", [
+    "#forge:stone",
+    "#forge:plates/copper",
+  ])
+  event.shapeless("create:refined_radiance_casing", [
+    "#forge:glass/colorless",
+    "create:refined_radiance",
+  ])
+
+  event.shapeless("kubejs:refined_radiance_block", [
+    "9x create:refined_radiance",
+  ])
+  event.shapeless("9x create:refined_radiance", [
+    "kubejs:refined_radiance_block",
+  ])
+
+  event.recipes.createCrushing("kubejs:ash_block", "minecraft:blackstone")
+  event.recipes.createSplashing(
+    [Item.of("create:zinc_nugget").withChance(0.125)],
+    "kubejs:ash_block"
+  )
+
+  event.recipes.createMixing(
+    ["create:asurine", Item.of("create:asurine").withChance(0.5)],
+    ["minecraft:cobbled_deepslate", "create:asurine"]
+  )
+
+  event.recipes.createCrushing("minecraft:blackstone", "minecraft:basalt")
+
+  event.recipes
+    .createMixing(
+      [
+        "2x minecraft:blackstone",
+        Item.of("minecraft:blackstone").withChance(0.1),
+      ],
+      ["minecraft:cobblestone", "minecraft:blackstone"]
+    )
+    .heated()
+
+  event.recipes.createMixing("2x minecraft:coarse_dirt", [
+    "minecraft:gravel",
+    "minecraft:dirt",
+  ])
+  event.recipes.createMixing(
+    ["minecraft:dirt", Item.of("minecraft:flint").withChance(0.1)],
+    "minecraft:coarse_dirt"
+  )
+
+  event.recipes.createMixing(
+    ["create:crimsite", Item.of("create:crimsite").withChance(0.5)],
+    ["minecraft:blackstone", "create:crimsite"]
+  )
+
+  event.recipes.createCompacting("minecraft:cobbled_deepslate", [
+    "9x minecraft:cobblestone",
+    Fluid.of("minecraft:lava", 100),
+  ])
+
+  event.recipes.createCompacting("minecraft:netherrack", [
+    "minecraft:flint",
+    "2x kubejs:ash_block",
+    Fluid.of("minecraft:lava", 100),
+  ])
+
+  event.recipes.createMixing(
+    ["create:veridium", Item.of("create:veridium").withChance(0.5)],
+    ["minecraft:mossy_cobblestone", "create:veridium"]
+  )
+
+  event.custom({
+    type: "farmersdelight:cooking",
+    ingredients: [
+      {
+        item: "thermal:tomato_sauce",
+      },
+    ],
+    result: {
+      item: "farmersdelight:tomato_sauce",
+      count: 3,
+    },
+    cookingtime: 200,
+  })
+
+  event.recipes.createMechanicalCrafting(
+    "storagedrawers:creative_storage_upgrade",
+    ["DEEED", "EENEE", "ENSNE", "EENEE", "DEEED"],
+    {
+      E: "storagedrawers:emerald_storage_upgrade",
+      N: "minecraft:netherite_block",
+      D: "minecraft:diamond_block",
+      S: "minecraft:nether_star",
+    }
+  )
+}
+
+function createmelting(event) {
+  // Create Melting Mixer recipes
+  event.recipes
+    .createMixing(
+      Fluid.of("tconstruct:blazing_blood", 50),
+      "minecraft:blaze_powder"
+    )
+    .heated()
+  event.recipes
+    .createMixing(Fluid.of("tconstruct:molten_amethyst_bronze", 90), [
+      Fluid.of("tconstruct:molten_copper", 90),
+      Fluid.of("tconstruct:molten_amethyst", 100),
+    ])
+    .heated()
+  event.recipes
+    .createMixing(Fluid.of("tconstruct:molten_bronze", 360), [
+      Fluid.of("tconstruct:molten_copper", 90),
+      Fluid.of("tconstruct:molten_tin", 90),
+    ])
+    .heated()
+  event.recipes
+    .createMixing(Fluid.of("tconstruct:molten_constantan", 180), [
+      Fluid.of("tconstruct:molten_copper", 90),
+      Fluid.of("tconstruct:molten_nickel", 90),
+    ])
+    .heated()
+  event.recipes
+    .createMixing(Fluid.of("tconstruct:molten_constantan", 180), [
+      Fluid.of("tconstruct:molten_copper", 90),
+      Fluid.of("tconstruct:molten_nickel", 90),
+    ])
+    .heated()
+  event.recipes
+    .createMixing(Fluid.of("tconstruct:molten_debris", 180), [
+      "minecraft:ancient_debris",
+      "4x create:powdered_obsidian",
+    ])
+    .superheated()
+  event.recipes
+    .createMixing(Fluid.of("tconstruct:molten_electrum", 180), [
+      Fluid.of("tconstruct:molten_gold", 90),
+      Fluid.of("tconstruct:molten_silver", 90),
+    ])
+    .heated()
+  event.recipes
+    .createMixing(Fluid.of("tconstruct:molten_enderium", 180), [
+      { fluidTag: "forge:molten_lead", amount: "270" },
+      "minecraft:diamond",
+      { fluidTag: "forge:ender", amount: "500" },
+    ])
+    .superheated()
+  event.recipes
+    .createMixing(Fluid.of("materialis:molten_fairy", 90), [
+      "minecraft:gold_ingot",
+      Fluid.of("tconstruct:liquid_soul", 1000),
+      { fluidTag: "forge:milk", amount: "100" },
+    ])
+    .heated()
+  event.recipes
+    .createMixing(Fluid.of("tconstruct:molten_invar", 270), [
+      Fluid.of("tconstruct:molten_iron", 180),
+      Fluid.of("tconstruct:molten_nickel", 90),
+    ])
+    .heated()
+  event.recipes
+    .createMixing(Fluid.of("tconstruct:molten_lumium", 360), [
+      { fluidTag: "forge:molten_tin", amount: "270" },
+      "#forge:ingots/silver",
+      { fluidTag: "forge:glowstone", amount: "500" },
+    ])
+    .superheated()
+  event.recipes
+    .createMixing(Fluid.of("tconstruct:molten_netherite", 10), [
+      Fluid.of("tconstruct:molten_debris", 40),
+      Fluid.of("tconstruct:molten_gold", 20),
+    ])
+    .superheated()
+  event.recipes
+    .createMixing(Fluid.of("tconstruct:molten_obsidian", 100), [
+      Fluid.of("minecraft:water", 50),
+      Fluid.of("minecraft:lava", 100),
+    ])
+    .heated()
+  event.recipes
+    .createMixing(Fluid.of("tconstruct:molten_rose_gold", 180), [
+      Fluid.of("tconstruct:molten_copper", 90),
+      Fluid.of("tconstruct:molten_gold", 90),
+    ])
+    .heated()
+  event.recipes
+    .createMixing(Fluid.of("tconstruct:molten_signalum", 360), [
+      { fluidTag: "forge:molten_copper", amount: "270" },
+      "#forge:ingots/silver",
+      { fluidTag: "forge:redstone", amount: "400" },
+    ])
+    .heated()
+  event.recipes
+    .createMixing(Fluid.of("tconstruct:molten_steel", 90), [
+      Fluid.of("tconstruct:molten_iron", 180),
+      "#minecraft:coals",
+    ])
+    .heated()
+
+  //Refined Radiance
+  event.recipes
+    .createMixing("create:refined_radiance", [
+      "8x minecraft:glowstone",
+      "2x create:polished_rose_quartz",
+      Fluid.of("tconstruct:molten_glass", 1000),
+    ])
+    .superheated()
+
+  //Tin can melting
+  event.custom({
+    type: "tconstruct:melting",
+    ingredient: [
+      {
+        item: "aquaculture:tin_can",
+      },
+    ],
+    result: {
+      fluid: "tconstruct:molten_tin",
+      amount: 90,
+    },
+    temperature: 500,
+    time: 240,
+  })
+}
+
+function woodcutting(event) {
+  function woodcuttingrecipe(woodtype) {
+    event.stonecutting(
+      "minecraft:" + woodtype + "_planks",
+      "minecraft:" + woodtype + "_button"
+    )
+    event.stonecutting(
+      "minecraft:" + woodtype + "_planks",
+      "minecraft:" + woodtype + "_fence"
+    )
+    event.stonecutting(
+      "minecraft:" + woodtype + "_planks",
+      "minecraft:" + woodtype + "_fence_gate"
+    )
+    event.stonecutting(
+      "minecraft:" + woodtype + "_planks",
+      "minecraft:" + woodtype + "_pressure_plate"
+    )
+    event.stonecutting(
+      "minecraft:" + woodtype + "_planks",
+      "minecraft:" + woodtype + "_slab"
+    )
+    event.stonecutting(
+      "minecraft:" + woodtype + "_planks",
+      "minecraft:" + woodtype + "_stairs"
+    )
+    event.stonecutting(
+      "minecraft:" + woodtype + "_planks",
+      "minecraft:" + woodtype + "_trapdoor"
+    )
+
+    event.stonecutting(
+      "minecraft:" + woodtype + "_button",
+      "minecraft:" + woodtype + "_planks"
+    )
+    event.stonecutting(
+      "minecraft:" + woodtype + "_fence",
+      "minecraft:" + woodtype + "_planks"
+    )
+    event.stonecutting(
+      "minecraft:" + woodtype + "_fence_gate",
+      "minecraft:" + woodtype + "_planks"
+    )
+    event.stonecutting(
+      "minecraft:" + woodtype + "_pressure_plate",
+      "minecraft:" + woodtype + "_planks"
+    )
+    event.stonecutting(
+      "minecraft:" + woodtype + "_slab",
+      "minecraft:" + woodtype + "_planks"
+    )
+    event.stonecutting(
+      "minecraft:" + woodtype + "_stairs",
+      "minecraft:" + woodtype + "_planks"
+    )
+    event.stonecutting(
+      "minecraft:" + woodtype + "_trapdoor",
+      "minecraft:" + woodtype + "_planks"
+    )
+  }
+
+  woodcuttingrecipe("acacia")
+  woodcuttingrecipe("birch")
+  woodcuttingrecipe("dark_oak")
+  woodcuttingrecipe("jungle")
+  woodcuttingrecipe("oak")
+  woodcuttingrecipe("spruce")
+  woodcuttingrecipe("crimson")
+  woodcuttingrecipe("warped")
+}
+
+function createaddition(event) {
+  function wirerecipe(material) {
+    event.remove({ id: "createaddition:rolling/" + material + "_plate" })
+
+    event.custom({
+      type: "createaddition:rolling",
+      input: {
+        tag: "forge:rods/" + material,
+      },
+      result: {
+        item: "createaddition:" + material + "_wire",
+      },
+    })
+  }
+
+  wirerecipe("copper")
+  wirerecipe("gold")
+  wirerecipe("iron")
 }
 
 function crushing(event) {
@@ -177,6 +522,54 @@ function drawers(event) {
     "storagedrawers:upgrade_template",
     "minecraft:stick"
   )
+
+  function drawerupgrade(upgradetype, upgradeitem, upgradeitem2) {
+    event.remove({ id: "storagedrawers:" + upgradetype + "_upgrade" })
+
+    event.shaped(
+      "storagedrawers:" + upgradetype + "_upgrade",
+      ["SSS", "IBI", "SSS"],
+      {
+        B: upgradeitem2,
+        I: upgradeitem,
+        S: "minecraft:stick",
+      }
+    )
+  }
+
+  // Easier Upgrades
+  drawerupgrade(
+    "one_stack",
+    "minecraft:flint",
+    "storagedrawers:upgrade_template"
+  )
+
+  // Retextured upgrade recipes to match the rest of the modpack
+  drawerupgrade(
+    "obsidian_storage",
+    "create:andesite_alloy",
+    "storagedrawers:upgrade_template"
+  )
+  drawerupgrade(
+    "iron_storage",
+    "#forge:plates/copper",
+    "storagedrawers:obsidian_storage_upgrade"
+  )
+  drawerupgrade(
+    "gold_storage",
+    "#forge:plates/brass",
+    "storagedrawers:iron_storage_upgrade"
+  )
+  drawerupgrade(
+    "diamond_storage",
+    "create:polished_rose_quartz",
+    "storagedrawers:gold_storage_upgrade"
+  )
+  drawerupgrade(
+    "emerald_storage",
+    "create:refined_radiance",
+    "storagedrawers:diamond_storage_upgrade"
+  )
 }
 
 function xptweaks(event) {
@@ -224,7 +617,7 @@ function customcobblegen(event) {
 }
 
 function neptunium(event) {
-  // Milling 1-4  neptunium nuggets
+  // Milling 1-4 neptunium nuggets
   event.recipes.createMilling(
     [
       "aquaculture:neptunium_nugget",
@@ -252,6 +645,9 @@ function removeItems(event) {
   // Abuseable
   event.remove({ output: "tconstruct:ender_slime_sling" })
 
+  // Admin only
+  event.remove({ output: "invisibilitycloak:cloak_of_invisibility" })
+
   // Remove double Food Crates
   event.remove({ output: "thermal:carrot_block" })
   event.remove({ output: "thermal:potato_block" })
@@ -262,38 +658,26 @@ function removeItems(event) {
   event.remove({ output: "thermal:tomato_block" })
 
   // Very badly coded and not worth it can bypass claims
-  event.remove({ output: "thermal:slime_grenade" })
-  event.remove({ output: "thermal:redstone_grenade" })
-  event.remove({ output: "thermal:glowstone_grenade" })
-  event.remove({ output: "thermal:ender_grenade" })
-  event.remove({ output: "thermal:earth_grenade" })
-  event.remove({ output: "thermal:lightning_grenade" })
-  event.remove({ output: "thermal:ice_grenade" })
-  event.remove({ output: "thermal:fire_grenade" })
+  function thermalexplosives(type) {
+    event.remove({ output: "thermal:" + type + "_grenade" })
+    event.remove({ output: "thermal:" + type + "_tnt" })
+    event.remove({ output: "thermal:" + type + "_tnt_minecart" })
+  }
+
+  thermalexplosives("fire")
+  thermalexplosives("ice")
+  thermalexplosives("lightning")
+  thermalexplosives("earth")
+  thermalexplosives("ender")
+  thermalexplosives("glowstone")
+  thermalexplosives("redstone")
+  thermalexplosives("slime")
+  thermalexplosives("phyto")
+
   event.remove({ output: "thermal:explosive_grenade" })
-
-  event.remove({ output: "thermal:fire_tnt" })
-  event.remove({ output: "thermal:ice_tnt" })
-  event.remove({ output: "thermal:lightning_tnt" })
-  event.remove({ output: "thermal:earth_tnt" })
-  event.remove({ output: "thermal:ender_tnt" })
-  event.remove({ output: "thermal:glowstone_tnt" })
-  event.remove({ output: "thermal:redstone_tnt" })
-  event.remove({ output: "thermal:slime_tnt" })
-
-  event.remove({ output: "thermal:slime_tnt_minecart" })
-  event.remove({ output: "thermal:redstone_tnt_minecart" })
-  event.remove({ output: "thermal:glowstone_tnt_minecart" })
-  event.remove({ output: "thermal:ender_tnt_minecart" })
-  event.remove({ output: "thermal:earth_tnt_minecart" })
-  event.remove({ output: "thermal:lightning_tnt_minecart" })
-  event.remove({ output: "thermal:ice_tnt_minecart" })
-  event.remove({ output: "thermal:fire_tnt_minecart" })
 
   // Explotable stuff from ae2
   event.remove({ output: "ae2:tiny_tnt" })
-  event.remove({ output: "ae2:debug_eraser" })
-  event.remove({ output: "ae2:debug_meteorite_placer" })
 
   // Spams console on arc and doesnt function
   event.remove({ output: "create:tree_fertilizer" })
