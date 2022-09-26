@@ -157,7 +157,7 @@ function recipetweaks(event) {
         "fluid": "createaddition:seed_oil",
         "amount": 1000
       },
-      "energy": 10000
+      "energy": 1000
     })
 
   event.recipes.createMechanicalCrafting(

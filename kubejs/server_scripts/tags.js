@@ -20,6 +20,13 @@ onEvent("tags.items", (event) => {
 
   //adds create:cogwheel to the gears tag
   event.add("forge:gears", "create:cogwheel")
+
+  //adds correct tags for farwateraddons cotton
+  event.add("forge:seeds", "farwateraddons:cotton_seeds")
+  event.add("forge:seeds/cotton", "farwateraddons:cotton_seeds")
+
+  event.add("minecraft:crops", "farwateraddons:cotton_seeds")
+  event.add("minecraft:crops", "farwateraddons:cotton")
 })
 
 onEvent("tags.blocks", (event) => {
