@@ -160,6 +160,17 @@ function recipetweaks(event) {
       "energy": 1000
     })
 
+  event.shaped("create:sail_frame", ["SSS", "SAS", "SSS"], {
+    S: "minecraft:stick",
+    A: "create:andesite_alloy",
+  });
+
+  event.remove({ id: "create:crafting/kinetics/white_sail" });
+  event.shaped("create:white_sail", ["SSS", "SAS", "SSS"], {
+    S: "minecraft:stick",
+    A: "#minecraft:occludes_vibration_signals"
+  });
+
   event.recipes.createMechanicalCrafting(
     "storagedrawers:creative_storage_upgrade",
     ["DEEED", "EENEE", "ENSNE", "EENEE", "DEEED"],
