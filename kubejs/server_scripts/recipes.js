@@ -29,6 +29,13 @@ onEvent("recipes", (event) => {
   log.push("Recipes Updated")
 })
 
+onEvent('recipes.compostables', (event) => {
+  log.push("Registering Composting Recipes")
+  event.add('farwateraddons:cotton_seeds', 0.25)
+  event.add('farwateraddons:cotton', 0.25)
+  log.push("Composting Recipes Updated")
+})
+
 function recipetweaks(event) {
   // Recipes
   event.replaceInput({}, "create:dough", "#forge:dough")
@@ -715,3 +722,25 @@ function removeItems(event) {
   event.remove({ output: "davebuildingmod:hard_air" })
   event.remove({ output: "davebuildingmod:soft_air" })
 }
+
+events.listen('player.chat', function (event) {
+	if (event.message.startsWith('!clear')) {
+		event.player.tell('Log cleared')
+		log = []
+		event.cancel()
+	}
+
+	if (event.message.startsWith('!status')) {
+		if (log.length == 0) {
+			event.player.tell('Log empty')
+			event.cancel()
+			return
+		}
+
+		event.player.tell('Log Start >')
+		log.forEach(s => event.player.tell(s))
+		event.player.tell('<')
+		event.cancel()
+	}
+})
+
