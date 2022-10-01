@@ -188,6 +188,22 @@ function recipetweaks(event) {
       S: "minecraft:nether_star",
     }
   )
+
+  event.custom({
+    type: "create:haunting",
+    ingredients: [
+      {
+        item: "kubejs:ash_block",
+      },
+    ],
+    results: [
+      {
+        item: "minecraft:netherrack",
+      },
+    ],
+  })
+
+  event.shapeless("davebuildingmod:track_end", "create:track")
 }
 
 function createmelting(event) {
