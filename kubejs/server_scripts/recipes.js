@@ -204,6 +204,8 @@ function recipetweaks(event) {
   })
 
   event.shapeless("davebuildingmod:track_end", "create:track")
+
+  event.recipe.createMixing(["2x thermal:apatite", Item.of("thermal:apatite_dust").withChance(0.5)], ["thermal:apatite", "ae2:certus_quartz_dust"])
 }
 
 function createmelting(event) {
