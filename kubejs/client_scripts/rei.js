@@ -13,6 +13,7 @@ onEvent("rei.hide.items", (event) => {
   event.hide("tconstruct:ender_slime_sling")
   event.hide("advancedperipherals:chunk_controller")
   event.hide("ae2:spatial_anchor")
+  event.hide("ae2:matter_cannon")
 
   // Remove double Food Crates
   event.hide("thermal:carrot_block")
