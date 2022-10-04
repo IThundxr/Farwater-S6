@@ -699,6 +699,7 @@ function removeItems(event) {
   event.remove({ output: "tconstruct:ender_slime_sling" })
   event.remove({ output: "advancedperipherals:chunk_controller" })
   event.remove({ output: "ae2:spatial_anchor" })
+  event.remove({ output: "ae2:matter_cannon" })
 
   // Admin only
   event.remove({ output: "invisibilitycloak:cloak_of_invisibility" })
