@@ -14,6 +14,7 @@ onEvent("rei.hide.items", (event) => {
   event.hide("advancedperipherals:chunk_controller")
   event.hide("ae2:spatial_anchor")
   event.hide("ae2:matter_cannon")
+  event.hide("ae2:tiny_tnt")
 
   // Remove double Food Crates
   event.hide("thermal:carrot_block")
@@ -42,9 +43,6 @@ onEvent("rei.hide.items", (event) => {
   thermalexplosives("slime")
   thermalexplosives("phyto")
   thermalexplosives("nuke")
-
-  // Explotable stuff from ae2
-  event.hide("ae2:tiny_tnt")
 
   // Spams console on arc and doesnt function
   event.hide("create:tree_fertilizer")

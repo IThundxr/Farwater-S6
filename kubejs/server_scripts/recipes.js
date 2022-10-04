@@ -700,6 +700,7 @@ function removeItems(event) {
   event.remove({ output: "advancedperipherals:chunk_controller" })
   event.remove({ output: "ae2:spatial_anchor" })
   event.remove({ output: "ae2:matter_cannon" })
+  event.remove({ output: "ae2:tiny_tnt" })
 
   // Admin only
   event.remove({ output: "invisibilitycloak:cloak_of_invisibility" })
@@ -731,9 +732,6 @@ function removeItems(event) {
   thermalexplosives("phyto")
 
   event.remove({ output: "thermal:explosive_grenade" })
-
-  // Explotable stuff from ae2
-  event.remove({ output: "ae2:tiny_tnt" })
 
   // Spams console on arc and doesnt function
   event.remove({ output: "create:tree_fertilizer" })
