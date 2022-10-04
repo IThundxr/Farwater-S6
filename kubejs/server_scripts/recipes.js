@@ -648,6 +648,14 @@ function customcobblegen(event) {
     })
   }
 
+  let cobblegen = (adjacent, output) => {
+    event.custom({
+      type: "thermal:rock_gen",
+      adjacent: adjacent,
+      result: { item: output },
+    })
+  }
+
   bedrock_cobblegen("minecraft:packed_ice", "minecraft:andesite")
   bedrock_cobblegen(
     "architects_palette:polished_packed_ice",
@@ -657,6 +665,8 @@ function customcobblegen(event) {
     "architects_palette:chiseled_packed_ice",
     "minecraft:diorite"
   )
+  
+  cobblegen("create:honey", "create:limestone")
 }
 
 function neptunium(event) {
