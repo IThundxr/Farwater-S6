@@ -25,7 +25,7 @@ onEvent("recipes", (event) => {
   xptweaks(event).then(log.push("7/10 XP Tweaks"))
   customcobblegen(event).then(log.push("8/10 Custom Cobblegen"))
   neptunium(event).then(log.push("9/10 Neptunium"))
-  removeItems(event).then(log.push("10/10 Remove Items"))
+  removeItems(event)
   log.push("Recipes Updated")
 })
 
@@ -747,25 +747,4 @@ function removeItems(event) {
   event.remove({ output: "davebuildingmod:hard_air" })
   event.remove({ output: "davebuildingmod:soft_air" })
 }
-
-events.listen('player.chat', function (event) {
-	if (event.message.startsWith('!clear')) {
-		event.player.tell('Log cleared')
-		log = []
-		event.cancel()
-	}
-
-	if (event.message.startsWith('!status')) {
-		if (log.length == 0) {
-			event.player.tell('Log empty')
-			event.cancel()
-			return
-		}
-
-		event.player.tell('Log Start >')
-		log.forEach(s => event.player.tell(s))
-		event.player.tell('<')
-		event.cancel()
-	}
-})
 
