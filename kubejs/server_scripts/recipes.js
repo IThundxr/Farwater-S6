@@ -5,8 +5,6 @@ settings.logRemovedRecipes = true
 settings.logSkippedRecipes = false
 settings.logErroringRecipes = true
 
-var log = []
-
 let donutCraft = (event, output, center, ring) => {
   event.shaped(output, ["SSS", "SCS", "SSS"], {
     C: center,
