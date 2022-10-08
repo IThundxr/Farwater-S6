@@ -15,25 +15,25 @@ let donutCraft = (event, output, center, ring) => {
 }
 
 onEvent("recipes", (event) => {
-  log.push("Registering Recipes")
-  recipetweaks(event).then(log.push("1/10 Recipe Tweaks"))
-  createmelting(event).then(log.push("2/10 Create Melting"))
-  woodcutting(event).then(log.push("3/10 Woodcutting"))
-  createaddition(event).then(log.push("4/10 Create Addition"))
-  crushing(event).then(log.push("5/10 Crushing"))
-  drawers(event).then(log.push("6/10 Drawers"))
-  xptweaks(event).then(log.push("7/10 XP Tweaks"))
-  customcobblegen(event).then(log.push("8/10 Custom Cobblegen"))
-  neptunium(event).then(log.push("9/10 Neptunium"))
-  removeItems(event).then(log.push("10/10 Remove Items"))
-  log.push("Recipes Updated")
+  console.log("Registering Recipes")
+  recipetweaks(event)
+  createmelting(event)
+  woodcutting(event)
+  createaddition(event)
+  crushing(event)
+  drawers(event)
+  xptweaks(event)
+  customcobblegen(event)
+  neptunium(event)
+  removeItems(event)
+  console.log("Recipes Updated")
 })
 
 onEvent("recipes.compostables", (event) => {
-  log.push("Registering Composting Recipes")
+  console.log("Registering Composting Recipes")
   event.add("farwateraddons:cotton_seeds", 0.25)
   event.add("farwateraddons:cotton", 0.25)
-  log.push("Composting Recipes Updated")
+  console.log("Composting Recipes Updated")
 })
 
 function recipetweaks(event) {
