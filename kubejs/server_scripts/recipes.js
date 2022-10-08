@@ -29,10 +29,10 @@ onEvent("recipes", (event) => {
   log.push("Recipes Updated")
 })
 
-onEvent('recipes.compostables', (event) => {
+onEvent("recipes.compostables", (event) => {
   log.push("Registering Composting Recipes")
-  event.add('farwateraddons:cotton_seeds', 0.25)
-  event.add('farwateraddons:cotton', 0.25)
+  event.add("farwateraddons:cotton_seeds", 0.25)
+  event.add("farwateraddons:cotton", 0.25)
   log.push("Composting Recipes Updated")
 })
 
@@ -159,24 +159,24 @@ function recipetweaks(event) {
   })
 
   event.custom({
-      "type": "thermal:compression_fuel",
-      "ingredient": {
-        "fluid": "createaddition:seed_oil",
-        "amount": 1000
-      },
-      "energy": 1000
-    })
+    type: "thermal:compression_fuel",
+    ingredient: {
+      fluid: "createaddition:seed_oil",
+      amount: 1000,
+    },
+    energy: 1000,
+  })
 
   event.shaped("create:sail_frame", ["SSS", "SAS", "SSS"], {
     S: "minecraft:stick",
     A: "create:andesite_alloy",
-  });
+  })
 
-  event.remove({ id: "create:crafting/kinetics/white_sail" });
+  event.remove({ id: "create:crafting/kinetics/white_sail" })
   event.shaped("create:white_sail", ["SSS", "SAS", "SSS"], {
     S: "minecraft:stick",
-    A: "#minecraft:occludes_vibration_signals"
-  });
+    A: "#minecraft:occludes_vibration_signals",
+  })
 
   event.recipes.createMechanicalCrafting(
     "storagedrawers:creative_storage_upgrade",
@@ -204,6 +204,14 @@ function recipetweaks(event) {
   })
 
   event.shapeless("davebuildingmod:track_end", "create:track")
+
+  event.remove({ id: CR("compat/ae2/milling/sky_stone_block") })
+  event.recipes
+    .createMilling(
+      ["ae2:sky_dust", "ae2:sky_stone_block"],
+      "ae2:sky_stone_block"
+    )
+    .processingTime(1000)
 }
 
 function createmelting(event) {
@@ -665,7 +673,7 @@ function customcobblegen(event) {
     "architects_palette:chiseled_packed_ice",
     "minecraft:diorite"
   )
-  
+
   cobblegen("create:honey", "create:limestone")
 }
 
@@ -747,25 +755,3 @@ function removeItems(event) {
   event.remove({ output: "davebuildingmod:hard_air" })
   event.remove({ output: "davebuildingmod:soft_air" })
 }
-
-events.listen('player.chat', function (event) {
-	if (event.message.startsWith('!clear')) {
-		event.player.tell('Log cleared')
-		log = []
-		event.cancel()
-	}
-
-	if (event.message.startsWith('!status')) {
-		if (log.length == 0) {
-			event.player.tell('Log empty')
-			event.cancel()
-			return
-		}
-
-		event.player.tell('Log Start >')
-		log.forEach(s => event.player.tell(s))
-		event.player.tell('<')
-		event.cancel()
-	}
-})
-
