@@ -22,6 +22,7 @@ onEvent("recipes", (event) => {
   drawers(event)
   xptweaks(event)
   customcobblegen(event)
+  knifemelting(event)
   neptunium(event)
   removeItems(event)
   console.log("Recipes Updated")
@@ -673,6 +674,31 @@ function customcobblegen(event) {
   )
 
   cobblegen("create:honey", "create:limestone")
+}
+
+function knifemelting(event) {
+  function meltknife(material, temp) {
+    event.custom({
+      "type": "tconstruct:damagable_melting",
+      "ingredient": [
+        {
+          "item": "farmersdelight:" + material + "_knife"
+        }
+      ],
+      "result": {
+        "fluid": "tconstruct:molten_" + material,
+        "amount": 100,
+        "unit_size": 25
+      },
+      "temperature": temp,
+      "time": 118
+    })
+  }
+
+  meltknife("iron", 800)
+  meltknife("gold", 700)
+  meltknife("diamond", 1450)
+  meltknife("netherite", 1250)
 }
 
 function neptunium(event) {
