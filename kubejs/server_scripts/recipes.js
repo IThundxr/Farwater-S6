@@ -204,7 +204,7 @@ function recipetweaks(event) {
 
   event.shapeless("davebuildingmod:track_end", "create:track")
 
-  event.remove({ id: CR("compat/ae2/milling/sky_stone_block") })
+  event.remove({ id: "create:compat/ae2/milling/sky_stone_block" })
   event.recipes
     .createMilling(
       ["ae2:sky_dust", "ae2:sky_stone_block"],
@@ -259,16 +259,16 @@ function createmelting(event) {
     .heated()
   event.recipes
     .createMixing(Fluid.of("tconstruct:molten_enderium", 180), [
-      { fluidTag: "forge:molten_lead", amount: "270" },
+      { fluidTag: "forge:molten_lead", amount: 270 },
       "minecraft:diamond",
-      { fluidTag: "forge:ender", amount: "500" },
+      { fluidTag: "forge:ender", amount: 500 },
     ])
     .superheated()
   event.recipes
     .createMixing(Fluid.of("materialis:molten_fairy", 90), [
       "minecraft:gold_ingot",
       Fluid.of("tconstruct:liquid_soul", 1000),
-      { fluidTag: "forge:milk", amount: "100" },
+      { fluidTag: "forge:milk", amount: 100 },
     ])
     .heated()
   event.recipes
@@ -279,7 +279,7 @@ function createmelting(event) {
     .heated()
   event.recipes
     .createMixing(Fluid.of("tconstruct:molten_lumium", 360), [
-      { fluidTag: "forge:molten_tin", amount: "270" },
+      { fluidTag: "forge:molten_tin", amount: 270 },
       "#forge:ingots/silver",
       { fluidTag: "forge:glowstone", amount: "500" },
     ])
@@ -304,9 +304,9 @@ function createmelting(event) {
     .heated()
   event.recipes
     .createMixing(Fluid.of("tconstruct:molten_signalum", 360), [
-      { fluidTag: "forge:molten_copper", amount: "270" },
+      { fluidTag: "forge:molten_copper", amount: 270 },
       "#forge:ingots/silver",
-      { fluidTag: "forge:redstone", amount: "400" },
+      { fluidTag: "forge:redstone", amount: 400 },
     ])
     .heated()
   event.recipes
