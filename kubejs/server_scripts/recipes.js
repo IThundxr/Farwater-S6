@@ -211,6 +211,13 @@ function recipetweaks(event) {
       "ae2:sky_stone_block"
     )
     .processingTime(1000)
+
+  event.recipes
+    .createCrushing(
+      ["ae2:sky_dust", "ae2:sky_stone_block"],
+      "ae2:sky_stone_block"
+    )
+    .processingTime(1000)
 }
 
 function createmelting(event) {
@@ -674,6 +681,7 @@ function customcobblegen(event) {
   )
 
   cobblegen("create:honey", "create:limestone")
+  cobblegen("farwateraddons:molten_sugar", "minecraft:calcite")
 }
 
 function knifemelting(event) {
