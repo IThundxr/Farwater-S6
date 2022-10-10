@@ -696,7 +696,7 @@ function knifemelting(event) {
   }
 
   meltknife("iron", 800)
-  meltknife("gold", 700)
+  meltknife("golden", 700)
   meltknife("diamond", 1450)
   meltknife("netherite", 1250)
 }
