@@ -218,6 +218,19 @@ function recipetweaks(event) {
       "ae2:sky_stone_block"
     )
     .processingTime(1000)
+
+  event.custom({
+    type: "thermal:insolator",
+    ingredient: {
+      item: "croptopia:coffee_beans"
+    },
+    result: [
+      {
+        item: "farmersrespite:coffee_beans",
+        chance: 2.0
+      }
+    ]
+  })
 }
 
 function createmelting(event) {
