@@ -231,6 +231,12 @@ function recipetweaks(event) {
       }
     ]
   })
+
+  event.remove({ id: "lazierae2:resonating_seed" })
+  event.shapeless("2x lazierae2:resonating_seed", [
+    "#forge:dusts/resonating",
+    "#forge:sand",
+  ])
 }
 
 function createmelting(event) {
