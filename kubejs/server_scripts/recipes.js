@@ -163,7 +163,7 @@ function recipetweaks(event) {
       fluid: "createaddition:seed_oil",
       amount: 1000,
     },
-    energy: 1000,
+    energy: 10000,
   })
 
   event.shaped("create:sail_frame", ["SSS", "SAS", "SSS"], {
@@ -237,6 +237,69 @@ function recipetweaks(event) {
     "#forge:dusts/resonating",
     "#forge:sand",
   ])
+
+  event.custom({
+    type: "create:haunting",
+    ingredients: [
+      {
+        tag: "minecraft:coals"
+      }
+    ],
+    results: [
+      {
+        item: "minecraft:glow_ink_sac"
+      }
+    ]
+  })
+
+  event.custom({
+    type: "thermal:lapidary_fuel",
+    ingredient: {
+      tag: "minecraft:nether_star",
+    },
+    energy: 1000000,
+  })
+
+  event.custom({
+    type: "thermal:insolator",
+    ingredient: {
+      item: "minecraft:honey"
+    },
+    result: [
+      {
+        item: "minecraft:honey",
+        chance: 2.0
+      }
+    ]
+  })
+
+  event.custom({
+    type: "thermal:insolator",
+    ingredient: {
+      item: "minecraft:honeycomb"
+    },
+    result: [
+      {
+        item: "minecraft:honeycomb",
+        chance: 2.0
+      }
+    ]
+  })
+
+  event.recipes.createMixing(['2x thermal:lapis_lazuli_dust', Item.of('thermal:lapis_lazuli_dust').withChance(0.35)], ['minecraft:calcite', 'minecraft:lapis_lazuli'])
+  event.smelting('minecraft:lapis', 'thermal:lapis_lazuli_dust').xp(0.1)
+
+  event.recipes.createMixing(['2x thermal:ruby', Item.of('thermal:ruby').withChance(0.35)], ['minecraft:calcite', 'minecraft:redstone'])
+
+  event.recipes.createMixing(['2x thermal:sapphire', Item.of('thermal:sapphire').withChance(0.35)], ['minecraft:calcite', 'minecraft:blue_ice'])
+
+  event.recipes.createMixing(['2x thermal:apatite', Item.of('thermal:apatite').withChance(0.35)], ['minecraft:calcite', 'minecraft:bone_meal'])
+
+  event.recipes.createMixing(['2x thermal:niter', Item.of('thermal:niter').withChance(0.35)], ['minecraft:calcite', 'minecraft:sugar'])
+
+  event.recipes.createMixing(['2x thermal:lead_ingot', Item.of('thermal:lead_ingot').withChance(0.35)], ['ae2:fluix_dust', 'thermal:lead_ingot'])
+
+  event.recipes.createMixing(['2x thermal:silver_ingot', Item.of('thermal:silver_ingot').withChance(0.35)], ['ae2:certus_quartz_dust', 'thermal:silver_ingot'])
 }
 
 function createmelting(event) {
