@@ -263,11 +263,11 @@ function recipetweaks(event) {
   event.custom({
     type: "thermal:insolator",
     ingredient: {
-      item: "minecraft:honey"
+      item: "minecraft:honey_bottle"
     },
     result: [
       {
-        item: "minecraft:honey",
+        item: "minecraft:honey_bottle",
         chance: 2.0
       }
     ]
@@ -286,8 +286,8 @@ function recipetweaks(event) {
     ]
   })
 
-  event.recipes.createMixing(['2x thermal:lapis_lazuli_dust', Item.of('thermal:lapis_lazuli_dust').withChance(0.35)], ['minecraft:calcite', 'minecraft:lapis_lazuli'])
-  event.smelting('minecraft:lapis', 'thermal:lapis_lazuli_dust').xp(0.1)
+  event.recipes.createMixing(['2x thermal:lapis_dust', Item.of('thermal:lapis_dust').withChance(0.35)], ['minecraft:calcite', 'minecraft:lapis_lazuli'])
+  event.smelting('minecraft:lapis_luzuli', 'thermal:lapis_dust').xp(0.1)
 
   event.recipes.createMixing(['2x thermal:ruby', Item.of('thermal:ruby').withChance(0.35)], ['minecraft:calcite', 'minecraft:redstone'])
 
