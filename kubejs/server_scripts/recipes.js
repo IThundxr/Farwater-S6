@@ -270,7 +270,7 @@ function recipetweaks(event) {
   event.custom({
     type: "thermal:lapidary_fuel",
     ingredient: {
-      tag: "minecraft:nether_star",
+      item: "minecraft:nether_star",
     },
     energy: 1000000,
   })
