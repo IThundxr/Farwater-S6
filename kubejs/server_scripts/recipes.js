@@ -96,9 +96,34 @@ function recipetweaks(event) {
     "kubejs:ash_block"
   )
 
+  //Renewable Zinc
   event.recipes.createMixing(
     ["create:asurine", Item.of("create:asurine").withChance(0.5)],
     ["minecraft:cobbled_deepslate", "create:asurine"]
+  )
+
+    //Renewable Iron/Redstone
+  event.recipes.createMixing(
+    ["create:crimsite", Item.of("create:crimsite").withChance(0.5)],
+    ["minecraft:blackstone", "create:crimsite"]
+  )
+
+  //Renewable Copper
+  event.recipes.createMixing(
+    ["create:veridium", Item.of("create:veridium").withChance(0.5)],
+    ["minecraft:mossy_cobblestone", "create:veridium"]
+  )
+
+  //Renewable Gold
+  event.recipes.createMixing(
+    ["create:ochrum", Item.of("create:ochrum").withChance(0.5)],
+    ["minecraft:soul_sand", "create:ochrum"]
+  )
+
+  //Renewable Tin
+  event.recipes.createMixing(
+    ["thermal:tin_ingot", Item.of("thermal:tin_ingot").withChance(0.5)],
+    ["create:ochrum", "thermal:tin_ingot"]
   )
 
   event.recipes.createCrushing("minecraft:blackstone", "minecraft:basalt")
@@ -122,11 +147,6 @@ function recipetweaks(event) {
     "minecraft:coarse_dirt"
   )
 
-  event.recipes.createMixing(
-    ["create:crimsite", Item.of("create:crimsite").withChance(0.5)],
-    ["minecraft:blackstone", "create:crimsite"]
-  )
-
   event.recipes.createCompacting("minecraft:cobbled_deepslate", [
     "9x minecraft:cobblestone",
     Fluid.of("minecraft:lava", 100),
@@ -137,11 +157,6 @@ function recipetweaks(event) {
     "2x kubejs:ash_block",
     Fluid.of("minecraft:lava", 100),
   ])
-
-  event.recipes.createMixing(
-    ["create:veridium", Item.of("create:veridium").withChance(0.5)],
-    ["minecraft:mossy_cobblestone", "create:veridium"]
-  )
 
   event.custom({
     type: "farmersdelight:cooking",
