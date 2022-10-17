@@ -15,6 +15,7 @@ let donutCraft = (event, output, center, ring) => {
 onEvent("recipes", (event) => {
   console.log("Registering Recipes")
   recipetweaks(event)
+  diamondnerf(event)
   createmelting(event)
   woodcutting(event)
   createaddition(event)
@@ -315,6 +316,58 @@ function recipetweaks(event) {
   event.recipes.createMixing(['2x thermal:lead_ingot', Item.of('thermal:lead_ingot').withChance(0.35)], ['ae2:fluix_dust', 'thermal:lead_ingot'])
 
   event.recipes.createMixing(['2x thermal:silver_ingot', Item.of('thermal:silver_ingot').withChance(0.35)], ['ae2:certus_quartz_dust', 'thermal:silver_ingot'])
+}
+
+function diamondnerf(event) {
+  function nerfDiamonds(item, amount, time) {
+    event.remove({ id: "tconstruct:smeltery/melting/diamond/" + item })
+    event.custom({
+      type: "tconstruct:damagable_melting",
+      ingredient: [
+        {
+          item: "minecraft:diamond_" + item,
+        },
+      ],
+      result: {
+        fluid: "tconstruct:molten_diamond",
+        amount: amount,
+        unit_size: 25,
+      },
+      temperature: 1450,
+      time: time,
+    })
+  }
+
+  function DoubleItemNerfDiamonds(item, item2, amount, time) {
+    event.custom({
+      type: "tconstruct:damagable_melting",
+      ingredient: [
+        {
+          item: "minecraft:diamond_" + item,
+        },
+        {
+          item: "minecraft:diamond_" + item2,
+        },
+      ],
+      result: {
+        fluid: "tconstruct:molten_diamond",
+        amount: amount,
+        unit_size: 25,
+      },
+      temperature: 1450,
+      time: time,
+    })
+  }
+
+  nerfDiamonds("helmet", 50, 186)
+  nerfDiamonds("chestplate", 80, 235)
+  nerfDiamonds("leggings", 70, 220)
+  nerfDiamonds("boots", 40, 166)
+
+  nerfDiamonds("shovel", 10, 83)
+
+  DoubleItemNerfDiamonds("axe", "pickaxe", 30, 144)
+  DoubleItemNerfDiamonds("hoe", "sword", 20, 118)
 }
 
 function createmelting(event) {
