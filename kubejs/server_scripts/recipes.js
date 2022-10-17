@@ -338,7 +338,8 @@ function diamondnerf(event) {
     })
   }
 
-  function DoubleItemNerfDiamonds(item, item2, amount, time) {
+  function DoubleItemNerfDiamonds(item, item2, amount, time, recipeid) {
+    event.remove({ id: "tconstruct:smeltery/melting/diamond/" + recipeid })
     event.custom({
       type: "tconstruct:damagable_melting",
       ingredient: [
@@ -366,8 +367,8 @@ function diamondnerf(event) {
 
   nerfDiamonds("shovel", 10, 83)
 
-  DoubleItemNerfDiamonds("axe", "pickaxe", 30, 144)
-  DoubleItemNerfDiamonds("hoe", "sword", 20, 118)
+  DoubleItemNerfDiamonds("axe", "pickaxe", 30, 144, "axes")
+  DoubleItemNerfDiamonds("hoe", "sword", 20, 118, "weapon")
 }
 
 function createmelting(event) {
