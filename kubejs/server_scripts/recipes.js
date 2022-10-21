@@ -316,6 +316,18 @@ function recipetweaks(event) {
   event.recipes.createMixing(['2x thermal:lead_ingot', Item.of('thermal:lead_ingot').withChance(0.35)], ['ae2:fluix_dust', 'thermal:lead_ingot'])
 
   event.recipes.createMixing(['2x thermal:silver_ingot', Item.of('thermal:silver_ingot').withChance(0.35)], ['ae2:certus_quartz_dust', 'thermal:silver_ingot'])
+
+  event.custom({
+    "type": "tconstruct:entity_melting",
+    "entity": {
+      "type": "farwateraddons:capybara"
+    },
+    "result": {
+      "fluid": "materialis:utherium",
+      "amount": 100
+    },
+    "damage": 2
+  })
 }
 
 function diamondnerf(event) {
