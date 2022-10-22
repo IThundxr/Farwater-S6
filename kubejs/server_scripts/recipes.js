@@ -302,8 +302,7 @@ function recipetweaks(event) {
     ]
   })
 
-  event.recipes.createMixing(['2x thermal:lapis_dust', Item.of('thermal:lapis_dust').withChance(0.35)], ['minecraft:calcite', 'minecraft:lapis_lazuli'])
-  event.smelting('minecraft:lapis_lazuli', 'thermal:lapis_dust')
+  event.recipes.createMixing(['2x minecraft:lapis_lazuli', Item.of('minecraft:lapis_lazuli').withChance(0.35)], ['minecraft:calcite', 'minecraft:lapis_lazuli'])
 
   event.recipes.createMixing(['2x thermal:ruby', Item.of('thermal:ruby').withChance(0.35)], ['minecraft:calcite', 'minecraft:redstone'])
 
