@@ -82,7 +82,6 @@
                 "\u2a0c"
             ]
         },
-		
         {
             "type": "bitmap",
             "file": "minecraft:font/unicode_2699.png",
@@ -90,6 +89,15 @@
             "ascent": 8,
             "chars": [
                 "\u2699"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/unicode_2a0d.png",
+            "height": 9,
+            "ascent": 8,
+            "chars": [
+                "\u2a0d"
             ]
         }
     ]
